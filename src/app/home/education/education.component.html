@@ -1,0 +1,30 @@
+<section class="module" id="education">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="m-title c-align">
+            <h2>Education</h2>
+            <h6>My Educational Journey</h6>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <ul class="custom-timeline">
+            <li *ngFor="let education of educations" class="custom-timeline-item">
+              <div class="timeline-badge"></div>
+              <div class="timeline-panel">
+                <div class="timeline-body">
+                  <h5 class="timeline-title">{{education.degree}} | {{education.period}}</h5>
+                  <h6 class="timeline-description">{{education.institution}}</h6>
+                  <div [innerHTML]="education.description"></div>
+                </div>
+              </div>
+            </li>
+            <div class="custom-timeline-top"></div>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  

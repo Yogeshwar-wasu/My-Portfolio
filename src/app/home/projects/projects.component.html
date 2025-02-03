@@ -1,0 +1,36 @@
+<section class="module module-gray" id="projects">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="m-title c-align">
+            <h2>{{head.title}}</h2>
+            <h6>{{head.subtitle}}</h6>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <!-- Replaced the timeline with a regular list -->
+          <div class="job-list">
+            <!-- Displaying each job one after the other -->
+            <div *ngFor="let job of jobs" class="job-item">
+              <!-- Displaying job details -->
+              <h5 class="job-title">{{job.position}}</h5>
+              <h6 class="job-company">{{job.company}}</h6>
+              <p class="job-period">{{job.period}}</p>
+              <div class="job-description">
+                <ul>
+                  <li *ngFor="let point of job.description.split('\n')">
+                    <span class="bullet">&bull;</span> <!-- Bullet symbol -->
+                    <span>{{point}}</span>
+                  </li>
+                </ul>
+              </div>
+              <hr class="description-line">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  

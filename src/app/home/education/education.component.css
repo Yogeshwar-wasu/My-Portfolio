@@ -1,0 +1,60 @@
+/* Timeline */
+.custom-timeline {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .custom-timeline-item {
+    position: relative;
+    padding: 10px 20px;
+  }
+  
+  .custom-timeline-item:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 10px;
+    width: 1px;
+    height: 100%;
+    background-color: #ccc;
+  }
+  
+  .custom-timeline-item .timeline-badge {
+    position: absolute;
+    top: 5px;
+    left: 0;
+    width: 10px;
+    height: 10px;
+    background-color: #007bff; /* Change color as needed */
+    border-radius: 50%;
+  }
+  
+  .custom-timeline-item .timeline-panel {
+    position: relative;
+    margin-left: 15px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    padding: 10px;
+  }
+  
+  .custom-timeline-item .timeline-title {
+    font-size: 14px;
+    margin-top: 0;
+  }
+  
+  .custom-timeline-item .timeline-description {
+    font-style: italic;
+    color: #777;
+  }
+  
+  .custom-timeline-top {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 10px;
+    width: 1px;
+    height: 5px;
+    background-color: #ccc;
+  }
+  
