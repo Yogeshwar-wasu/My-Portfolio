@@ -29,8 +29,8 @@ To get this project running locally, follow these steps:
 1. Clone this repository:
 
     ```bash
-    git clone https://github.com/yourusername/your-repo-name.git
-    cd your-repo-name
+    git clone https://github.com/Yogeshwar_wasu/My-Portfolio.git
+    cd My-Portfolio
     ```
 
 2. Install the dependencies:
