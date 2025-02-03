@@ -309,7 +309,13 @@ html [type="button"],
 [type="reset"],
 [type="submit"] {
   -webkit-appearance: button;
+  -moz-appearance: button;
+  appearance: button;
+  border: none; /* Optional: Remove default border */
+  padding: 0; /* Optional: Reset padding */
+  background: none; /* Optional: Remove default background */
 }
+
 
 button::-moz-focus-inner,
 [type="button"]::-moz-focus-inner,
@@ -330,6 +336,8 @@ input[type="time"],
 input[type="datetime-local"],
 input[type="month"] {
   -webkit-appearance: listbox;
+  -moz-appearance: listbox; /* For Firefox */
+  appearance: listbox; /* Standard property for compatibility */
 }
 
 textarea {
@@ -366,9 +374,12 @@ progress {
 }
 
 [type="search"] {
-  outline-offset: -2px;
-  -webkit-appearance: none;
+  outline-offset: -2px; /* Adjusts the outline position */
+  -webkit-appearance: none; /* Removes default WebKit appearance */
+  -moz-appearance: none; /* Removes default Firefox appearance */
+  appearance: none; /* Standard property to remove appearance across all browsers */
 }
+
 
 [type="search"]::-webkit-search-cancel-button,
 [type="search"]::-webkit-search-decoration {
@@ -3128,7 +3139,7 @@ tbody.collapse.show {
   border-radius: 0.25rem;
 }
 
-.custom-file-control:lang(en):empty::after {
+.custom-file-control:empty::after {
   content: "Choose file...";
 }
 
@@ -3148,7 +3159,7 @@ tbody.collapse.show {
   border-radius: 0 0.25rem 0.25rem 0;
 }
 
-.custom-file-control:lang(en)::before {
+.custom-file-control::before {
   content: "Browse";
 }
 
@@ -4583,6 +4594,8 @@ button.close {
   background: transparent;
   border: 0;
   -webkit-appearance: none;
+  -moz-appearance: none; /* Removes default Firefox appearance */
+  appearance: none;
 }
 
 .modal-open {

@@ -3124,7 +3124,7 @@ tbody.collapse.show {
   border-radius: 0.25rem;
 }
 
-.custom-file-control:lang(en):empty::after {
+.custom-file-control:empty::after {
   content: "Choose file...";
 }
 
@@ -3144,7 +3144,7 @@ tbody.collapse.show {
   border-radius: 0 0.25rem 0.25rem 0;
 }
 
-.custom-file-control:lang(en)::before {
+.custom-file-control:before {
   content: "Browse";
 }
 
