@@ -9,10 +9,21 @@ export class ProjectsComponent implements OnInit, OnChanges {
   @Input() English: any;
 
   public jobs: any = [
+     {
+      position: "PDF Utility Project",
+      company: "Mumbai",
+      period: "01/2025- Present",
+      description: "Designed and developed a desktop application using Node.js 14 to optimize and automate PDF utility processes.\n" + 
+      "Created a utility to dynamically generate PDF letters from system data, significantly reducing manual effort and time.\n" + 
+      "Implemented an automated process for compressing PDFs into password-protected zip files for secure storage and sharing.\n" + 
+      "Developed file reading and letter-type-based PDF creation features, enhancing the user experience with a seamless and intuitive interface.\n" + 
+      "Ensured scalability, maintainability, and a smooth user experience by handling end-to-end development and deployment.\n" + 
+      "Focused on scalability and maintainability, providing a reliable utility with easy deployment." 
+     },
     {
       position: "On-boarding Project",
       company: "Mumbai",
-      period: "07/2024 - Present",
+      period: "07/2024 - 12/2024",
       description: "Responsible for end-to-end development, managing front-end, back-end, and database layers.\n" + 
       "Leveraged web development skills in Angular 14, Node.js 20, Git, and MySQL to deliver a robust application architecture.\n" + 
       "Led the On-boarding project, implementing Optical Character Recognition (OCR) for PAN and Aadhaar card processing using Node.js, enabling efficient extraction of user data.\n" + 
